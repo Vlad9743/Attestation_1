@@ -1,3 +1,4 @@
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,6 +15,7 @@ public class PetRegistry {
             output += "Имя: " + item.getName() + "\n";
             output += "Дата рождения: " + item.getBirthdate() + "\n";
             output += "Выполняет комманды: " + item.getCommands() + "\n";
+            output += "Класс: " + item.getClass().getName() + "\n";
             output += "---------------------------------------\n";
         }
         return output;
@@ -36,6 +38,15 @@ public class PetRegistry {
         return petList;
     }
 
+public List<Pet> findByBirthdate(LocalDate date){
+    List<Pet> foundList = new ArrayList<>();
+    for(Pet item : petList){
+        if(item.getBirthdate().equals(date)){
+            foundList.add(item);
+        }
+    }
+    return foundList;
 
+}
 
 }

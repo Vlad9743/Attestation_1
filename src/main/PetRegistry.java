@@ -49,12 +49,12 @@ public class PetRegistry {
     }
 
     public void testPetRegistryGenerator() {
-        Pet pet0 = new Hamster("Hamster0", LocalDate.of(2020, 11, 12), "lay,go");
-        Pet pet1 = new Hamster("Hamster1", LocalDate.of(2022, 12, 20), "lay,go");
-        Pet pet2 = new Cat("Cat0", LocalDate.of(2010, 7, 5), "take, run");
-        Pet pet3 = new Cat("Cat1", LocalDate.of(2015, 4, 18), "take, run");
-        Pet pet4 = new Dog("Dog1", LocalDate.of(1987, 3, 4), "take, run");
-        Pet pet5 = new Dog("Dog2", LocalDate.of(1987, 3, 4), "take, run");
+        Pet pet0 = new Hamster("Hamster0", LocalDate.of(2020, 11, 12), "eat, sleep, run");
+        Pet pet1 = new Hamster("Hamster1", LocalDate.of(2022, 12, 20), "eat, sleep");
+        Pet pet2 = new Cat("Cat0", LocalDate.of(2010, 7, 5), "walk, meow, jump");
+        Pet pet3 = new Cat("Cat1", LocalDate.of(2015, 4, 18), "walk, meow");
+        Pet pet4 = new Dog("Dog0", LocalDate.of(2016, 3, 4), "bring, run");
+        Pet pet5 = new Dog("Dog1", LocalDate.of(2016, 3, 4), "bring, run");
 
         petList.add(pet0);
         petList.add(pet1);

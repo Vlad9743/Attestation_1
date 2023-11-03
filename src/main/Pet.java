@@ -16,6 +16,9 @@ public class Pet {
         this.commands = commands;
     }
 
+    public Pet() {
+    }
+
     @Override
     public String toString() {
         return  "name='" + name + '\'' +

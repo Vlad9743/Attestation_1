@@ -38,15 +38,30 @@ public class PetRegistry {
         return petList;
     }
 
-public List<Pet> findByBirthdate(LocalDate date){
-    List<Pet> foundList = new ArrayList<>();
-    for(Pet item : petList){
-        if(item.getBirthdate().equals(date)){
-            foundList.add(item);
+    public List<Pet> findByBirthdate(LocalDate date){
+        List<Pet> foundList = new ArrayList<>();
+        for(Pet item : petList){
+            if(item.getBirthdate().equals(date)){
+                foundList.add(item);
+            }
         }
+        return foundList;
     }
-    return foundList;
 
-}
+    public void testPetRegistryGenerator() {
+        Pet pet0 = new Hamster("Hamster0", LocalDate.of(2020, 11, 12), "lay,go");
+        Pet pet1 = new Hamster("Hamster1", LocalDate.of(2022, 12, 20), "lay,go");
+        Pet pet2 = new Cat("Cat0", LocalDate.of(2010, 7, 5), "take, run");
+        Pet pet3 = new Cat("Cat1", LocalDate.of(2015, 4, 18), "take, run");
+        Pet pet4 = new Dog("Dog1", LocalDate.of(1987, 3, 4), "take, run");
+        Pet pet5 = new Dog("Dog2", LocalDate.of(1987, 3, 4), "take, run");
+
+        petList.add(pet0);
+        petList.add(pet1);
+        petList.add(pet2);
+        petList.add(pet3);
+        petList.add(pet4);
+        petList.add(pet5);
+    }
 
 }
